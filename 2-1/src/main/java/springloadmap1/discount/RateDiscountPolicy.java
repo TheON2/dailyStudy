@@ -1,8 +1,10 @@
 package springloadmap1.discount;
 
+import org.springframework.stereotype.Component;
 import springloadmap1.member.Grade;
 import springloadmap1.member.Member;
 
+@Component
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
