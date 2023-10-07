@@ -1,11 +1,11 @@
 function solution(num_list, n) {
-  let result = []
-  for (let i = n-1; i < num_list.length; i++) {
-    result.push(num_list[i])
+  let result = [];
+  for (let i = 0; i < num_list.length; i++) {
+    if(i%n===0) result.push(num_list[i]);
   }
-  return result
+  return result;
 }
 
 console.log(
-  solution([2, 1, 6]	,3)
+  solution([4, 2, 6, 1, 7, 6],	2)
 );
